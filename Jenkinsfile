@@ -32,13 +32,13 @@ pipeline {
         bat 'java -cp target/ProjectA-1.0-SNAPSHOT.jar com.example.App'
       }
     }
-    post {
+  }
+  post {
       success {
         echo 'Jenkinsfile Pipeline Created'
       }
       failure {
         echo 'Something Wants Wrong'
       }
-    }
-  }
+   }
 }
