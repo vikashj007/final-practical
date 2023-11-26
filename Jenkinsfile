@@ -1,10 +1,10 @@
-pipepline {
+pipeline {
   agent any
   tools {maven 'M7'}
   stages {
     stage('Checkout') {
       steps {
-        git branch: 'main' , url: 'https://github.com/vikashj007/final-practical.git'
+        git branch: 'main', url: 'https://github.com/vikashj007/final-practical.git'
       }
     }
     stage('Build') {
